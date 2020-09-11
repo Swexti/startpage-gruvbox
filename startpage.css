@@ -1,0 +1,240 @@
+/* ==UserStyle==
+@name           Startpage gruvbox
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me fixed by me
+==/UserStyle== */
+
+@-moz-document domain("startpage.com") {
+  :root {
+    --bg1: #1d2021;
+    --bg2: #282828;
+    --bg3: #504945;
+    --bg4: #202020;
+    --fg1: #ebdbb2;
+    --fg2: #d5c4a1;
+    --fg3: #a89984;
+    --col_blue: #83a598;
+    --col_aqua: #8ec07c;
+    --col_aqua_dark: #689d6a;
+  }
+  
+  .inline-nav-menu__link {
+    text-decoration: none;
+    color: var(--fg2) !important;
+    font-weight: 400;
+    padding-bottom: 8px;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  
+  .search-form--blak .search-form__q, .search-form--nite .search-form__q {
+    color: var(--fg2)
+  }
+  .search-form--blak .search-form__form, .search-form--nite .search-form__form {
+    background: var(--bg1);
+    box-shadow: none;
+    border: var(--bg1) 1px solid;
+  }
+    
+  body,
+  .layout,
+  .layout-web,
+  .w-gl,
+  .header__container {
+    background-color: var(--bg2) !important;
+  }
+
+  body {
+    padding: 0 5rem;
+  }
+
+  .header__container {
+    border: none !important;
+    margin-left: 0;
+    padding-top: 1rem;
+  }
+  .header__logo {
+    /*background-image: url("https://duckduckgo.com/assets/logo_header.alt.v108.svg") !important;*/
+    display: none;
+    background-image: none;
+    width: 0;
+  }
+
+  .search-form__button .ico-wrapper,
+  .search-form__clear-button {
+    background: none;
+    display: none !important;
+  }
+
+  .search-form .highlight {
+    border: none;
+  }
+
+  .inline-nav-menu__container {
+    border: none !important;
+  }
+  .inline-nav-menu__link__active,
+  .inline-nav-menu__link:hover {
+    border-bottom: 1px solid var(--fg1) !important;
+    color: var(--fg1) !important;
+  }
+  .vo-sp__description {
+    color: var(--fg4);
+  }
+
+  .search-form__form {
+    max-width: 700px !important;
+    background-color: var(--bg4);
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    height: 2.8rem;
+  }
+
+  *,
+  .wp-qi-sb__description,
+  .vo-sp__title {
+    color: var(--fg1);
+  }
+  .w-gl__result-url,
+  .wp-qi-sb__title,
+  .title {
+    color: var(--col_aqua) !important;
+    font-size: 12px;
+  }
+
+  .search-filter-region__selected-all-regions-icon,
+  .w-gl__anonymous-view-url,
+  .inline-nav-menu__mask-right {
+    display: none;
+  }
+
+  .layout-web__mainline,
+  .layout-images__mainline,
+  .mainline-results .mainline-results__web,
+  .layout-web__sidebar,
+  .w-gl__result-url-container,
+  .layout-video__mainline,
+  .mainline-results {
+    max-width: 700px !important;
+  }
+
+  .layout-images__inline-nav-container {
+    padding-left: 12px;
+  }
+
+  .layout-web__body,
+  .layout-images__inline-nav-container,
+  .layout-video__body,
+  .layout-news__body {
+    margin-left: 0;
+  }
+
+  .wp-qi-sb__img-block {
+    border: none;
+    border-radius: 0;
+  }
+
+  .wp-qi-sb__result {
+    border: none;
+    box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.5);
+  }
+  .wp-qi-tp__result,
+  .anonymous-view-url {
+    display: none !important;
+  }
+
+  .hamburger-menu-container {
+    transform: translate(-50%, 50%);
+  }
+
+  button.advanced {
+    background: var(--bg4) !important;
+    padding: 0.5rem;
+  }
+
+  .menu-container > * {
+    margin: 0 0.5rem !important;
+    color: var(--fg3) !important;
+  }
+
+  /* hide unnecessary menu options */
+  .menu-container > *:not(:first-child) {
+    display: none;
+  }
+
+  .image-container {
+    margin: 0.5rem !important;
+  }
+
+  a:hover {
+    text-decoration-color: var(--fg1) !important;
+  }
+  .search-filters-toolbar--blak .advanced, .search-filters-toolbar--blak__advacned, .search-filters-toolbar--nite .advanced, .search-filters-toolbar--nite__advacned {
+      background-color: var(--bg1);
+      color: var(--fg1);
+  }
+  .w-gl__label {
+    color: var(--fg2) !important;
+  }
+  .footer__container {
+    background-color: var(--bg2) !important;
+  }
+  .pagination .num--active {
+    background-color: var(--col_blue);
+    color: var(--bg2);
+  }
+  .pagination__next-prev-button {
+    color: var(--fg2) !important     
+  }
+   .pagination__next-prev-button:hover {
+    color: var(--fg1) !important      
+  }
+  .search-filter-time--blak .search-filter-time__options, .search-filter-time--nite .search-filter-time__options {
+    border: var(--bg1) 1px solid;
+    background-color: var(--bg4);
+    color: #d4d7e1;
+  }
+  .search-filter-time--blak .search-filter-time__options .selected, .search-filter-time--nite .search-filter-time__options .selected:active {
+    color: var(--col_blue) !important;
+  }
+  .search-filter-time--blak .search-filter-time__options .filter-button, .search-filter-time--nite .search-filter-time__options .filter-button {
+    color: var(--fg2);
+    background-color: var(--bg2);
+  }
+  .search-filter-time--blak .search-filter-time__options .filter-button:hover, .search-filter-time--nite .search-filter-time__options .filter-button:hover {
+    background-color: var(--col_blue);
+  }
+  .search-filter-region--blak .search-filter-region__options, .search-filter-region--nite .search-filter-region__options {
+    border: 1px solid var(--bg1);
+    background-color: var(--bg4);
+    color: var(--fg1) !important;
+  }
+  .search-filter-region--blak .search-filter-region__searchbar-region, .search-filter-region--nite .search-filter-region__searchbar-region {
+    background-color: var(--bg2);
+    color: var(--fg2);
+    border: 1px solid var(--bg1);
+  }
+  .search-filter-region--blak .search-filter-region__options .filter-button, .search-filter-region--nite .search-filter-region__options .filter-button {
+    color: var(--fg2);
+    background-color: var(--bg2);
+  }
+  .search-filter-region--blak .search-filter-region__options .options-header p, .search-filter-region--nite .search-filter-region__options .options-header p {
+    color: var(--fg1);
+  }
+  .search-filter-family--blak .search-filter-family__options, .search-filter-family--nite .search-filter-family__options {
+    border: 1px solid var(--bg1);
+    background-color: var(--bg4);
+  }
+  .search-filter-family--blak .search-filter-family__options .filter-button, .search-filter-family--nite .search-filter-family__options .filter-button {
+    color: var(--fg1) !important;
+    background-color: var(--bg2);
+  }
+  .search-filter-family--blak .search-filter-family__options .selected, .search-filter-family--nite .search-filter-family__options .selected {
+    color: var(--col_blue) !important    
+  }
+  
+  
+} 
